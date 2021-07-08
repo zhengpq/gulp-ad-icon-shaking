@@ -1,0 +1,32 @@
+{
+  "name": "gulp-ad-icon-shaking",
+  "version": "1.0.0",
+  "description": "gulp plugin for ad-mob icon tree shaking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengpq/gulp-ad-icon-shaking.git"
+  },
+  "keywords": [
+    "ad-icon",
+    "ad-mob",
+    "tree",
+    "shaking"
+  ],
+  "author": "zhengpq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengpq/gulp-ad-icon-shaking/issues"
+  },
+  "homepage": "https://github.com/zhengpq/gulp-ad-icon-shaking#readme",
+  "dependencies": {
+    "@babel/parser": "^7.14.7",
+    "@babel/traverse": "^7.14.7",
+    "adui-icon": "^1.8.7",
+    "htmlparser2": "^6.1.0",
+    "through2": "^4.0.2"
+  }
+}
