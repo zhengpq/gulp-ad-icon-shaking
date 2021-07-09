@@ -84,7 +84,7 @@ module.exports = (paths, iconsExtra) => {
   })
   return through.obj(
     { defaultEncoding: 'utf8' },
-    (file, encoding, callback) => {
+    function iconShaking (file, encoding, callback) {
       // 只处理 wxml 文件
       if (file.relative.includes('.wxml')) {
         const htmlParser = new htmlparser2.Parser({
@@ -122,6 +122,7 @@ module.exports = (paths, iconsExtra) => {
           fs.writeFileSync(item, contents, 'utf-8')
         })
       }
+      this.push(file)
       callback()
     }
   )
