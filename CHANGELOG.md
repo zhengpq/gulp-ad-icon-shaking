@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/zhengpq/gulp-ad-icon-shaking/compare/v1.6.0...v1.7.0) (2021-07-15)
+
+
+### Features
+
+* 更新 adui-icon ([8a18d09](https://github.com/zhengpq/gulp-ad-icon-shaking/commit/8a18d0942591cf66969e6b011e226951d4048e12))
+
 ## 1.6.0 (2021-07-15)
 
 
