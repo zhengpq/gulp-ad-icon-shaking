@@ -33,7 +33,7 @@
     "@babel/traverse": "^7.14.7",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "adui-icon": "^1.8.7",
+    "adui-icon": "^1.8.9",
     "htmlparser2": "^6.1.0",
     "through2": "^4.0.2"
   },
