@@ -32,7 +32,7 @@ const { src, dest, series } = require('gulp')
 const aduiIconShaking = require('gulp-ad-icon-shaking');
 
 const iconConfig = {
-  paths:[path.relative(__dirname,'./dist/adui-wxapp/lib/components/common/icon/icon-backgrounds.js')], // 必填，编译后的 icon 数据文件的地址，建议填写绝对地址
+  paths:[path.resolve(__dirname,'./dist/adui-wxapp/lib/components/common/icon/icon-backgrounds.js')], // 必填，编译后的 icon 数据文件的地址，建议填写绝对地址
   iconsExtra: [] // 选填
 }
 
