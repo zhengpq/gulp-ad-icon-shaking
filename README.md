@@ -22,6 +22,7 @@ npm install gulp-ad-icon-shaking
 - 支持三元判断的写法
 - 开发模式下请监听 `wml` 文件的变更，只有这样才能实时编译查看变化
 - 插件所在的任务请放在最后，因为最终会修改的是 js 文件，没有办法百分百保证插件修改文件后不会被js文件相关的任务覆盖
+- 因为这个插件需要遍历全部的 wxml 文件，所以在使用这个插件的任务中不要使用 change 或者是 newer 这类只监听部分文件的插件
 
 ## 使用范例
 
@@ -40,7 +41,7 @@ function buildTs() {
 }
 
 function buildIcon() {
-  return src('src/**/*.wxml').pipe(aduiIconShaking).pipe(dest('dist'))
+  return src('src/**/*.wxml').pipe(aduiIconShaking(iconConfig.paths, iconConfig.iconsExtra)).pipe(dest('dist'))
 },
 
 exports.default = series(
