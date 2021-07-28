@@ -119,7 +119,9 @@ module.exports = (paths, iconsExtra) => {
         }
         const contents = `export default ${JSON.stringify(fileContent)}`
         paths.forEach((item) => {
-          fs.writeFileSync(item, contents, 'utf-8')
+          if (fs.existsSync(item)) {
+            fs.writeFileSync(item, contents, 'utf-8')
+          }
         })
       }
       this.push(file)
