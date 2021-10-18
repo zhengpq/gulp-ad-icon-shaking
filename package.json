@@ -1,6 +1,6 @@
 {
   "name": "gulp-ad-icon-shaking",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "gulp plugin for ad-mob icon tree shaking",
   "main": "index.js",
   "scripts": {
